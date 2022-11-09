@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style/magic.css" />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="background">
+      <div class="weather">
+        <form action="" id="form-search">
+          <input type="text" id="search" />
+          <input type="submit" id="enter" value="→" />
+          <input type="submit" id="current-location-button" value="⟟" />
+        </form>
+        <span>
+          <strong id="cityChange">LEEDS</strong>
+        </span>
+        <span id="desc"> | sunny </span>
+        <h3 id="day">monday</h3>
+        <h3 id="time">7:25pm</h3>
+        <div class="rightIcon">
+          <i class="fa-solid fa-cloud-showers-water"></i>
+        </div>
+        <div id="right-temp">
+          <div><strong>11°C</strong></div>
+        </div>
+        <div class="container" id="days">
+          <div class="row">
+            <div class="col-2">mon</div>
+            <div class="col-2">tues</div>
+            <div class="col-2">wed</div>
+            <div class="col-2">thur</div>
+            <div class="col-2">fri</div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-2">
+              <div class="day-circle">
+                <i class="fa-solid fa-cloud">
+                  <div class="tempDays">
+                    <small>2°C</small>
+                  </div>
+                </i>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="day-circle">
+                <i class="fa-solid fa-cloud-showers-heavy">
+                  <div class="tempDays">
+                    <small> 12°c </small>
+                  </div>
+                </i>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="day-circle">
+                <i class="fa-solid fa-sun">
+                  <div class="tempDays">
+                    <small> 7°C </small>
+                  </div>
+                </i>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="day-circle">
+                <i class="fa-solid fa-sun">
+                  <div class="tempDays">
+                    <small> 22°C </small>
+                  </div>
+                </i>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="day-circle">
+                <i class="fa-solid fa-cloud">
+                  <div class="tempDays">
+                    <small> 13°C </small>
+                  </div>
+                </i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="src/javascript.js"
+      src="https://kit.fontawesome.com/4a0c7ea2f9.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

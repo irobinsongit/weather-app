@@ -1,0 +1,130 @@
+body {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#descChange {
+  text-align: left;
+  margin-bottom: 50px;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.weather {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #e3dafa;
+  border-radius: 150px;
+  padding: 60px;
+  padding-top: 20px;
+  width: 700px;
+  border: black solid 1px;
+  padding-bottom: 30px;
+  padding-right: 90px;
+}
+
+.background {
+  padding-top: 250px;
+}
+
+.sun {
+  font-size: 20px;
+  background: white;
+  background-position: left;
+  border-radius: 100px;
+  width: 200px;
+  height: 200px;
+  left: 0px;
+}
+
+#search,
+#enter,
+#ownlocation {
+  border-radius: 20px;
+  right: 20px;
+}
+
+#form-search {
+  text-align: left;
+  margin-bottom: 15px;
+  margin-left: 30px;
+}
+
+#search {
+  width: 300px;
+}
+
+.day-circle {
+  background: white;
+  border: 1px black solid;
+  border-radius: 40px;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  padding: 17px;
+  margin: 5px;
+  font-size: 40px;
+}
+
+.rightIcon {
+  position: absolute;
+  background: white;
+  border: 1px black solid;
+  border-radius: 80px;
+  width: 160px;
+  height: 160px;
+  top: 35px;
+  right: 40px;
+  text-align: center;
+  padding: 5px;
+  font-size: 90px;
+}
+
+small {
+  font-size: 12px;
+}
+
+#rightTemp {
+  position: absolute;
+  background: white;
+  border: 1px black solid;
+  border-radius: 80px;
+  width: 100px;
+  height: 100px;
+  right: 20px;
+  bottom: 80px;
+  text-align: center;
+  padding: 5px;
+  font-size: 40px;
+  padding-top: 20px;
+}
+
+#day {
+  position: absolute;
+  bottom: 170px;
+  left: 215px;
+  font-size: 15px;
+  opacity: 0.5;
+}
+
+#time {
+  position: absolute;
+  top: 115px;
+  left: 280px;
+  opacity: 0.5;
+  font-size: 15px;
+}
+
+.tempDays {
+  position: absolute;
+  padding-top: -10px;
+  font-size: 7px;
+}
+
+.col-2 {
+  margin: 2px;
+  text-align: center;
+}
