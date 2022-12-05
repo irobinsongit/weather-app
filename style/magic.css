@@ -82,7 +82,7 @@ small {
   right: -20px;
 }
 
-#right-temp {
+#right-temp-circle {
   position: absolute;
   background: white;
   border: 1px black solid;
@@ -90,10 +90,23 @@ small {
   width: 100px;
   height: 100px;
   right: 20px;
-  bottom: 62px;
+  bottom: 60px;
   padding: 5px;
-  font-size: 33px;
   padding-top: 20px;
+}
+
+#right-temp-text {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  text-align: center;
+  font-size: 40px;
+}
+
+#far-or-deg {
+  position: absolute;
+  top: 60px;
+  right: 27px;
 }
 
 .tempDays {
