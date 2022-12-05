@@ -150,3 +150,12 @@ small {
   top: 100px;
   opacity: 0.5;
 }
+
+#far-or-deg .active {
+  color: black;
+  cursor: default;
+}
+
+#far-or-deg .active:hover {
+  text-decoration: none;
+}
