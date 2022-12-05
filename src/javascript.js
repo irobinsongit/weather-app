@@ -21,7 +21,7 @@ let days = [
 
 let dayNow = days[now.getDay()];
 
-dayInner.innerHTML = `${dayNow}`;
+dayInner.innerHTML = `| ${dayNow}`;
 timeInner.innerHTML = `${timeNow}`;
 
 //Week 5

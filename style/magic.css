@@ -2,13 +2,7 @@ body {
   display: block;
   margin: 0 auto;
   text-align: center;
-}
-
-#descChange {
-  text-align: left;
-  margin-bottom: 50px;
-  margin-top: 20px;
-  margin-left: 30px;
+  font-family: Tahoma, sans-serif;
 }
 
 .weather {
@@ -19,11 +13,10 @@ body {
   background-color: #e3dafa;
   border-radius: 150px;
   padding: 60px;
-  padding-top: 20px;
+  padding-top: 30px;
+  padding-bottom: 20px;
   width: 700px;
   border: black solid 1px;
-  padding-bottom: 30px;
-  padding-right: 90px;
 }
 
 .background {
@@ -42,7 +35,7 @@ body {
 
 #search,
 #enter,
-#ownlocation {
+#current-location-button {
   border-radius: 20px;
   right: 20px;
 }
@@ -63,9 +56,7 @@ body {
   border-radius: 40px;
   width: 80px;
   height: 80px;
-  text-align: center;
-  padding: 17px;
-  margin: 5px;
+  padding: 30px;
   font-size: 40px;
 }
 
@@ -76,18 +67,22 @@ body {
   border-radius: 80px;
   width: 160px;
   height: 160px;
-  top: 35px;
-  right: 40px;
+  top: 40px;
+  right: 30px;
   text-align: center;
   padding: 5px;
   font-size: 90px;
 }
 
 small {
+  position: absolute;
   font-size: 12px;
+  text-align: center;
+  top: 22px;
+  right: -20px;
 }
 
-#rightTemp {
+#right-temp {
   position: absolute;
   background: white;
   border: 1px black solid;
@@ -95,27 +90,10 @@ small {
   width: 100px;
   height: 100px;
   right: 20px;
-  bottom: 80px;
-  text-align: center;
+  bottom: 62px;
   padding: 5px;
-  font-size: 40px;
+  font-size: 33px;
   padding-top: 20px;
-}
-
-#day {
-  position: absolute;
-  bottom: 170px;
-  left: 215px;
-  font-size: 15px;
-  opacity: 0.5;
-}
-
-#time {
-  position: absolute;
-  top: 115px;
-  left: 280px;
-  opacity: 0.5;
-  font-size: 15px;
 }
 
 .tempDays {
@@ -127,4 +105,35 @@ small {
 .col-2 {
   margin: 2px;
   text-align: center;
+}
+
+#cityChange {
+  position: absolute;
+  left: 75px;
+  font-size: 40px;
+  top: 75px;
+}
+
+#day {
+  position: absolute;
+  top: 80px;
+  left: 210px;
+  font-size: 20px;
+  opacity: 0.5;
+}
+
+#time {
+  position: absolute;
+  left: 290px;
+  top: 105px;
+  opacity: 0.5;
+  font-size: 20px;
+}
+
+#desc {
+  position: absolute;
+  left: 210px;
+  font-size: 20px;
+  top: 100px;
+  opacity: 0.5;
 }
