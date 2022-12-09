@@ -15,7 +15,7 @@ body {
   padding: 60px;
   padding-top: 30px;
   padding-bottom: 20px;
-  width: 700px;
+  width: 900px;
   border: black solid 1px;
 }
 
@@ -150,6 +150,18 @@ body {
   size: 20px;
 }
 
+#forecast {
+  position: relative;
+}
+
 .weather-forecast-temps {
-  font-size: 10px;
+  font-size: 13px;
+}
+
+.col-1 {
+  padding: 10px;
+  margin: 25px;
+}
+
+.row {
 }
