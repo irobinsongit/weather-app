@@ -37,7 +37,7 @@ function displayForecast(response) {
 
   let forecastHTML = `<div class="row">`;
   forecast.forEach(function (forecastDay, index) {
-    if (index < 6) {
+    if (index < 5) {
       forecastHTML =
         forecastHTML +
         `
@@ -85,7 +85,7 @@ function displayTemperature(response) {
 
   celTemperature = response.data.main.temp;
 
-  temperatureElement.innerHTML = Math.round(celTemperature);
+  temperatureElement.innerHTML = `${Math.round(celTemperature)}°C`;
   cityElement.innerHTML = response.data.name;
   windElement.innerHTML = `| wind ${Math.round(response.data.wind.speed)} km/h`;
   descriptionElement.innerHTML = `| ${response.data.weather[0].description}`;
@@ -108,33 +108,7 @@ function handleSubmit(event) {
   search(cityInputElement.value);
 }
 
-function displayFarTemperature(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#right-temp-text");
-  celsiusLink.classList.remove("active");
-  fahrenheitLink.classList.add("active");
-  let farTemperature = (celTemperature * 9) / 5 + 32;
-  temperatureElement.innerHTML = Math.round(farTemperature);
-}
-
-function displayCelTemperature(event) {
-  event.preventDefault();
-  celsiusLink.classList.add("active");
-  fahrenheitLink.classList.remove("active");
-  let temperatureElement = document.querySelector("#right-temp-text");
-  temperatureElement.innerHTML = Math.round(celTemperature);
-}
-
-let celTemperature = null;
-
 let form = document.querySelector("#form-search");
 form.addEventListener("submit", handleSubmit);
 
-let fahrenheitLink = document.querySelector("#far-link");
-fahrenheitLink.addEventListener("click", displayFarTemperature);
-
-let celsiusLink = document.querySelector("#cel-link");
-celsiusLink.addEventListener("click", displayCelTemperature);
-
 search("LEEDS");
-displayForecast();
