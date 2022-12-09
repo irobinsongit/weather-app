@@ -50,16 +50,6 @@ body {
   width: 300px;
 }
 
-.day-circle {
-  background: white;
-  border: 1px black solid;
-  border-radius: 40px;
-  width: 80px;
-  height: 80px;
-  padding: 30px;
-  font-size: 40px;
-}
-
 .rightIcon {
   position: absolute;
   background: white;
@@ -72,14 +62,6 @@ body {
   text-align: center;
   padding: 5px;
   font-size: 90px;
-}
-
-small {
-  position: absolute;
-  font-size: 12px;
-  text-align: center;
-  top: 22px;
-  right: -20px;
 }
 
 #right-temp-circle {
@@ -106,12 +88,6 @@ small {
   position: absolute;
   top: 60px;
   right: 27px;
-}
-
-.tempDays {
-  position: absolute;
-  padding-top: -10px;
-  font-size: 7px;
 }
 
 .col-2 {
@@ -172,4 +148,8 @@ small {
   right: 40px;
   bottom: 75px;
   size: 20px;
+}
+
+.weather-forecast-temps {
+  font-size: 10px;
 }

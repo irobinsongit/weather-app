@@ -22,6 +22,32 @@ let dayNow = days[now.getDay()];
 dayInner.innerHTML = `| ${dayNow}`;
 timeInner.innerHTML = `${timeNow}`;
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row">`;
+  let days = ["mon", "tues", "wed", "thur", "fri", "sat", "sun"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+            <div class="col-2">
+              <div class="weather-forecast-day">${day}</div>
+                <img
+                  src="http://openweathermap.org/img/wn/50d@2x.png"
+                  alt=""
+                  width="33"
+                />
+                <div class="weather-forecast-temps">
+                  <span class="weather-forecast-max">18°</span>
+                  <span class="weather-forecast-min">12°</span>
+                </div>
+            </div>
+        `;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function displayTemperature(response) {
   let temperatureElement = document.querySelector("#right-temp-text");
   let cityElement = document.querySelector("#cityChange");
@@ -81,4 +107,5 @@ fahrenheitLink.addEventListener("click", displayFarTemperature);
 let celsiusLink = document.querySelector("#cel-link");
 celsiusLink.addEventListener("click", displayCelTemperature);
 
-search("Leeds");
+search("LEEDS");
+displayForecast();
