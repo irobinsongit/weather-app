@@ -16,6 +16,7 @@ body {
   padding-top: 30px;
   padding-bottom: 20px;
   width: 900px;
+  height: 300px;
   border: black solid 1px;
 }
 
@@ -50,7 +51,7 @@ body {
   width: 300px;
 }
 
-.rightIcon {
+#right-icon-circle {
   position: absolute;
   background: white;
   border: 1px black solid;
@@ -61,7 +62,6 @@ body {
   right: 30px;
   text-align: center;
   padding: 5px;
-  font-size: 90px;
 }
 
 #right-temp-circle {
@@ -73,14 +73,13 @@ body {
   height: 100px;
   right: 20px;
   bottom: 60px;
-  padding: 5px;
-  padding-top: 20px;
 }
 
 #right-temp-text {
-  position: absolute;
-  top: 10px;
-  right: 35px;
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  top: 20px;
   font-size: 40px;
   font-weight: bold;
 }
@@ -91,9 +90,15 @@ body {
   right: 27px;
 }
 
-.col-2 {
+.col-1 {
   margin: 2px;
   text-align: center;
+  border: solid black 1px;
+  background-color: white;
+  border-radius: 50px;
+  margin: 25px;
+  width: 90px;
+  height: 90px;
 }
 
 #cityChange {
@@ -102,6 +107,7 @@ body {
   font-size: 40px;
   top: 75px;
   text-transform: uppercase;
+  font-weight: bolder;
 }
 
 #day {
@@ -110,6 +116,7 @@ body {
   left: 210px;
   font-size: 20px;
   opacity: 0.5;
+  display: inline;
 }
 
 #time {
@@ -147,22 +154,21 @@ body {
 
 #icon {
   position: absolute;
-  right: 40px;
-  bottom: 75px;
-  size: 20px;
+  right: 5px;
+  bottom: 5px;
+  height: 150px;
+  width: 150px;
 }
 
 #forecast {
-  position: relative;
+  position: absolute;
+  box-sizing: none;
+  bottom: 170px;
+  left: 400px;
 }
 
 .weather-forecast-temps {
   font-size: 13px;
-}
-
-.col-1 {
-  padding: 10px;
-  margin: 25px;
 }
 
 .weather-forecast-max {
@@ -171,4 +177,10 @@ body {
 
 .weather-forecast-min {
   opacity: 0.5;
+}
+
+#github-link {
+  position: absolute;
+  left: 600px;
+  bottom: 120px;
 }
